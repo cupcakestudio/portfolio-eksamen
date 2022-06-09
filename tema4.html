@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temaopgave Spil - Tema 4</title>
+    <link href="css/generel.css" rel="stylesheet">
+    <link href="css/ux_layout.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
                     <a href="about.html">Om mig</a>
                 </li>
                 <li>
-                    <a href="portfolio.html"> Portfoilo </a>
+                    <a href="portfolio.html"> Portfolio </a>
                 </li>
                 <li>
                     <a href="contact.html">Kontakt </a>
@@ -36,14 +38,14 @@
                 <a href="tema4.html"> Tema 4</a>
                 </li></ul>
    </nav>
-    <main>
+    <main id="tema4">
   
-   <img src="img/tema4/tema4-splash.png" alt="Spil" class="splashbillede">
-   
+  <div class="splash"> <img src="img/tema4/tema4-splash.png" alt="Spil" class="splashbillede">
+   </div>
 <section class="ux_content">
-    <div class="flex_content">
-        <h2>Salt me not spil</h2>
-        <p>På dette store tema, fik vi lavet et spil fra bunden, både designet og kodet det. Vi havde tidligere lært HTML og CSS, og fik i dette forløb yderligere lært Javascript, altså logikken bag og funktionaliteten af en hjemmeside, Spillet skulle være en klikbar spil med faldende elementer, have en timer, energi og point tæller. Overstående figur viser spilskærmen med et igangværende spil. </p>
+     <h2>Salt me not spil</h2>
+    
+    <section class="flex_content">
        <img src="img/tema4/tema4-assets1.PNG" alt="assets">
        <img src="img/tema4/tema4-sukkerknald-dev.PNG" alt="sugarcube development">
        <p>
@@ -52,8 +54,11 @@
         <p>
             Figur 2 viser en designudvikling af de gode spilelementer, hvorpå man starter udfra en almindelig sukkerknald med kantede former, men eftersom jeg begyndte at arbejde på de onde elementer, opdagede jeg at begge elementers variation var lille. Gennem marquee og transform værktøjerne i Illustrator fik jeg rundet kanterne hos sukkerknalderne, så de så mere runde og venlige ud. Disse værktøjer gør jeg ydermere brug af i videreudviklingen for resten af spillet.
         </p>
-        <h2>Spilmekanik</h2>
-        <img src="img/tema4/tema4-avatardev.PNG" alt="Graphic-subpage-Development of avatar">
+    </section>
+
+        <h2 class="second_project">Spilmekanik</h2>
+        <section class="flex_content1">
+            <img src="img/tema4/tema4-avatardev.PNG" alt="Graphic-subpage-Development of avatar">
         <img src="img/tema4/tema4-styletile.PNG" alt="Styletile">
         <p>Karakterdesign af min hovedperson i spillet, er baseret på en tv-serie, og selve spillet har stor indflydelse fra 1950-1960’erne. Vi lærte Illustrator metoder til at basere egne karakterer fra eksisterende karakterer, som resulteret i at jeg anvendte layers til at tegne over min papirskitse.Jeg valgte derefter at skitsere over Jen Masterson billedet, for at få de rigtige former af karakteren tydeliggjort. Arbejdet med layers har gjort det mere effektivt at kunne designe elementer isoleret for derefter at samle det i en helhed, som man kan se på titelskærmen i videreudviklingen af spildesignet. (Følg spillets link nederst på siden) 
 
@@ -61,7 +66,7 @@
          <p>Vi har i de tidligere forløb lært om Styletile og Moodboard, som er grundbasis for designet af en hjemmeside, jeg har gerne vil afspejle spillets design med den tilhørende hjemmeside, med brug af farver der var meget udbredt i 1950-60’er reklamer. Det hjalp med at begrænse min farvepalette og sørge for der var sammenhæng mellem spillet og hjemmesiden. I det næste forløb gøres der igen brug af Styletile og Moodboard, med udgangspunkt i en virksomheds identitet. 
         </p>
     </section>
-    
+</section>
     <section class="flexbox_code">
     <p>I dette forløb startede vi på Javascript, kort sagt, funktionalitet bag hjemmesider, og i dette tilfælde også vores spil mekanik. Figur 1 viser en genstart funktion på vores spilelementer ved hjælp af nøgleordet: this, som referer til det element som der er blevet klikket på (vha. en addEventListener tidligere i koden). Dette sørger for at vi ikke gentagne gange skal kode metoden for hvert salt element, men at den selv finder ud af hvilke af elementerne der er blevet interageret med. Selve funktionen gør spillet mere brugervenlig, da den også gør brug af nogle Math - metoder, hvor jeg har kodet funktionen til at give elementerne en tilfældig position og hastighed på spilskærmen, således at spilelementerne ikke kommer til at overlappe hinanden på skærmen. 
         this nøgleordet er brugbart, når der er tale om flere lignede elementer med samme funktionalitet, man kan evt anvende det til flere ‘call to action’ knapper på tværs af sider.   
