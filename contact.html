@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <link rel="stylesheet" href="css/generel.css">
 </head>
 <body>
     <header>
@@ -22,27 +23,65 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <nav class="breadcrumbs">
+    </header> <nav class="breadcrumbs">
            <ul><li>
                   <a href="index.html">Forside </a>
                </li>
                <p> > </p>
                <li>
                 <a href="contact.html">Kontakt</a>
-                </li>>
+                </li>
             </ul>
         </nav>    
-        <section class="kontakt_mig">   
+    <main class="contact_me">
+       
+        <section class="kontakt_mig"> 
+             <h2>Kom i kontakt</h2> 
            <p>Du finder mig primært via email eller over facebook. <br>
             Jeg prøver at besvare beskeder, så hurtigt som muligt og tøv endelig ikke hvis du har spørgsmål eller vil indgå i et samarbejde! 
             Klik på de nedestående links for at oprette forbindelse eller send en forespørgsel min vej gennem formularen:
             </p>
 
            <!-- indsæt fra liljenogfuglen og koble sammen med netlify -->
-           <article class="contact-form"></article>
-           <p class="soMe"></p>  
+           
+           <section class="contact_form">
+            
+            <div id="container">
+              <h1 id="h1_contact">Kontakt mig</h1>
+              <form action="tak.html" name="kontakt" method="post" id="contact_form" netlify>
+                <div class="name">
+                  <label for="name_input"></label>
+                  <input type="text" placeholder="Dit navn" name="name" id="name_input" required />
+                </div>
+                <div class="email">
+                  <label for="email_input"></label>
+                  <input type="email" placeholder="Din email" name="email" id="email_input" required />
+                </div>
+                <div class="telephone">
+                  <label for="telephone_input"></label>
+                  <input type="text" placeholder="Dit telefonnummer" name="telephone" id="telephone_input" required />
+                </div>
+                <div class="subject">
+                  <label for="subject_input"></label>
+                  <select name="subject" id="subject_input" required>
+                    <option value="" disabled hidden selected>Emne</option>
+                    <option>Jeg vil gerne bestille et produkt</option>
+                    <option>Jeg vil gerne efterspørge et samarbejde</option>
+                    <option>Andet.</option>
+                  </select>
+                </div>
+                <div class="message">
+                  <label for="message_input"></label>
+                  <textarea name="message" placeholder="SKRIV DIN BESKED HER" id="message_input" cols="30" rows="5" required></textarea>
+                </div>
+                <div class="submit">
+                  <input type="submit" value="Send besked" id="form_button" />
+                </div>
+              </form>
+            </div>
+          </section>
+
+           <h3 class="soMe"> Mine sociale medier: </h3>  
            <div class="soMe_flexbox">
                 <a href="linkedin.com" <img src="https://placeholder.it" alt="linkedin billede"/> Ting Hua Lin - LinkedIn</a>
                 <a href="instagram.com" <img src="https://placeholder.it" alt="ig billede"/> @thlin4812 - Instagram</a>
