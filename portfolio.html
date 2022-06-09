@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfoilo</title>
+    <title>Portfolio</title>
+    <link href="css/generel.css" rel="stylesheet">
+    <link href="css/code_layout.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
                     <a href="about.html">Om mig</a>
                 </li>
                 <li>
-                    <a href="portfolio.html"> Portfoilo </a>
+                    <a href="portfolio.html"> Portfolio </a>
                 </li>
                 <li>
                     <a href="contact.html">Kontakt </a>
@@ -32,27 +34,33 @@
                 <a href="portfolio.html"> Portfolio</a>
                 </li></ul> 
      </nav>
-    <main>
+    <main class="portfolio">
      <p>På denne side kan du danne dig et overblik over hvilke projekter jeg har arbejdet med.
     </p>
-     <!-- grid? --> <section class="portfolio_setup">
-          <article> <img src="img/tema2/tema2-splash.png" alt="kode billede"/> Tema 2
+ 
+     <section class="portfolio_setup">
+          <article> <img src="img/tema2/tema2-splash.png" alt="kode billede"/> 
+            <p class="tema" id="teksttema2">Tema 2</p>
           <p>Dette tema omhandler en responsiv hjemmeside</p> 
          <button id="tema2">Læs mere</button></article>
 
-          <article> <img src="img/tema3/tema3-splash.png" alt="UX billede"/> Tema 3
+          <article> <img src="img/tema3/tema3-splash.png" alt="UX billede"/> 
+            <p class="tema" id="teksttema3"> Tema 3</p>
             <p>Her kan du læse nærmere om UX og webshops projektet</p>
            <button id ="tema3">Læs mere</button></article> 
           
-           <article> <img src="img/tema4/tema4-splash.png" alt="Animation billede"/>Tema 4
+           <article> <img src="img/tema4/tema4-splash.png" alt="Animation billede"/>
+            <p class="tema" id="teksttema4">Tema 4</p>
              <p> I dette projekt skulle der arbejdes med animation og det resulteret i et spil!</p>
              <button id="tema4">Læs mere</button></article>
          
-             <article> <img src="img/tema5/tema5-splash.png" alt="video film billede"/> Tema 5
+             <article> <img src="img/tema5/tema5-splash.png" alt="video film billede"/> 
+            <p class="tema" id="teksttema5">Tema 5</p>
             <p>Lights, camera, action! Behind the scenes til projektet om Indholdsproduktion kan læses her</p>
             <button id="tema5">Læs mere</button></article>
         
-            <article> <img src="https://placeholder.it" alt="portfolio billede"/> Tema 6
+            <article> <img src="https://placeholder.it" alt="portfolio billede"/> 
+            <p class="tema" id="teksttema6">Tema 6</p>
             <p>Hvad hele dette projekt centerer sig om; Portfolio-eksamen. 
             </p>
             <button id="tema6">Læs mere</button></article>
