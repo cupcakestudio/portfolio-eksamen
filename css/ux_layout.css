@@ -126,3 +126,12 @@ h2 {display: block;
     left: 75%;
    
   }
+
+  /*MOBILE VERSION*/ 
+  @media (max-width:500px) {
+  
+    .ux_content {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }

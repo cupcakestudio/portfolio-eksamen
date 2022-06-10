@@ -44,14 +44,18 @@ img {
   }
 
 @media (max-width: 500px) {
-.flexbox_code{
-    display: flex;
-    flex-direction: column;
-}
-    .flexbox_code :first-child{
-            order: 2;
-    }
-    
+
+  #tema2 .grid_code,
+  #tema6 .grid_code{
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+ .grid_code > :first-child{
+   grid-area: 2;
+ }
+  
 }
 
 
