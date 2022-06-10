@@ -48,14 +48,15 @@ header > a{
    }
 nav ul {
     display: flex;
-    justify-self: flex-start; 
-    margin-right: auto;
+    justify-self: flex-start;
+    align-self: center; 
+   gap: 40px;
 }
 nav ul > li > a {
     color: #5FA0DD; 
     text-shadow: 2px 0px 5px#5FA0DD;
     text-decoration: none;
-    gap: 5px;
+   
 }
    
 nav ul > li  {
