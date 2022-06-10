@@ -1,0 +1,39 @@
+img {
+    max-width: 100%;
+}
+
+.flexbox_code
+{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+/*tema2 .relateret_sites*/
+#tema2  
+#reftema4 { 
+    position: absolute;
+    top: 202%;
+    left: 17%;
+   
+  }
+  #tema2 
+  #reftema6 { 
+    position: absolute;
+    top: 202%;
+    left: 70%;
+  }
+
+@media (max-width: 500px) {
+.flexbox_code{
+    display: flex;
+    flex-direction: column;
+}
+    .flexbox_code :first-child{
+            order: 2;
+    }
+    
+}
+
+

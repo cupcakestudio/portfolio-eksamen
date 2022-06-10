@@ -70,8 +70,7 @@
     <section class="flexbox_code">
     <p>I dette forløb startede vi på Javascript, kort sagt, funktionalitet bag hjemmesider, og i dette tilfælde også vores spil mekanik. Figur 1 viser en genstart funktion på vores spilelementer ved hjælp af nøgleordet: this, som referer til det element som der er blevet klikket på (vha. en addEventListener tidligere i koden). Dette sørger for at vi ikke gentagne gange skal kode metoden for hvert salt element, men at den selv finder ud af hvilke af elementerne der er blevet interageret med. Selve funktionen gør spillet mere brugervenlig, da den også gør brug af nogle Math - metoder, hvor jeg har kodet funktionen til at give elementerne en tilfældig position og hastighed på spilskærmen, således at spilelementerne ikke kommer til at overlappe hinanden på skærmen. 
         this nøgleordet er brugbart, når der er tale om flere lignede elementer med samme funktionalitet, man kan evt anvende det til flere ‘call to action’ knapper på tværs af sider.   
-        
-        </p>
+ </p>
     <img src="img/tema4/tema4-kode1.PNG" alt="restart Element function">
     <img src="img/tema4/tema4-kode2.PNG" alt="animations-code_snippet">
  <p>Til spilelementerne har vi også skulle kode animationer til. Vi blev introduceret til keyframes, altså en animationssekvens, samt diverse properties til en css klasse. Ved at anvende transform propertien kan man ændre et elements position eller størrelse. Da jeg benyttede disse forskellige animationer på mine elementer var det med fomålet at differentiere de gode og onde elementer endnu mere, samt afprøve forskellige animationsteknikker.
@@ -83,19 +82,28 @@
 <section class="links">
 <a href="https://thlstudios.dk/kea/04_animation/spil/index.html"> Salt me not hjemmeside</a> <!--link til siden-->
 </section>
- <section class="relateret_sites">
-     <article> <a href="tema2.html"><img src="https://placeholder.it" alt="kode billede"/> Tema 2</a>
-        <p>Dette tema omhandler en responsiv hjemmeside</p> </article>
-     <article> <a href="tema3.html"><img src="https://placeholder.it" alt="UX billede"/> Tema 3</a>
-     <p>Her kan du læse nærmere om UX og webshops projektet</p></article>
-     <article> <a href="tema5.html"><img src="https://placeholder.it" alt="video film billede"/> Tema 5</a>
-        <p>Lights, camera, action! Behind the scenes til projektet om Indholdsproduktion kan læses her</p>
-    </article>
-     <article> <a href="tema6.html"><img src="https://placeholder.it" alt="portfolio billede"/> Tema 6</a>
-        <p>Hvad hele dette projekt centerer sig om; Portfolio-eksamen. 
-        </p></article>
+<section class="relateret_sites">
+    <h2 id="relateret_sitesSection">Relateret projekter</h2>
+    <section class="relateret_sites_container">  
+   
+    <article class="hoverK"> <a href="tema2.html"><img src="img/tema2/tema2-splash.png" alt="kode  billede"/> </a>
+        <p class="reftema" id="reftema2">Tema 2</p>
+        <p>Lights, camera, action! Behind the scenes til projektet om Indholdsproduktion kan læses her</p></article>
+    
+        <article class="hoverD"> <a href="tema3.html"><img src="img/tema3/tema3-splash.png" alt="UX billede"/> </a>
+     
+            <p class="reftema" id="reftema3">Tema 3</p>       <p>Her kan du læse nærmere om UX og webshops projektet</p></article>
+   
+     <article class="hoverD"> <a href="tema5.html"><img src="img/tema5/tema5-splash.png" alt="video film billede"/> </a>
+        <p class="reftema" id="reftema5">Tema 5</p>
+        <p>Lights, camera, action! Behind the scenes til projektet om Indholdsproduktion kan læses her</p></article>
+      
+        <article class="hoverDK"> <a href="tema6.html"><img src="img/tema6/tema6-splash.png" alt="portfolio billede"/> </a>
+        <p class="reftema" id="reftema6">Tema 6</p>
+        <p>Lights, camera, action! Behind the scenes til projektet om Indholdsproduktion kan læses her</p></article>
+ </section>
  </section>
   </main>
-  <footer></footer>
+  <footer>All rights reserved </footer>
 </body>
 </html>

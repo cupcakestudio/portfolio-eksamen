@@ -57,6 +57,15 @@ nav ul > li  {
     align-items: center;
    
 } 
+/* SPLASH*/ 
+
+.splash
+{
+ display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*forside layout*/ 
 main {
      display: grid;
@@ -275,7 +284,7 @@ margin: 10px;;
   }
 
 
-  /*PORTFOLIO SIDEN*/
+  /*===========PORTFOLIO SIDEN=============*/
   .portfolio {
     display: grid;
     grid-template-columns: 1fr;
@@ -284,15 +293,17 @@ margin: 10px;;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 25px;
-  justify-items: center;
+  justify-self: center;
+  align-self: start;
 }
 
 article {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
- 
+  
 }
+/*TODO: lad knapper stå lige i portfolio*/
 
  article img,
  .tema {
@@ -301,8 +312,23 @@ article {
 article img {
   filter: grayscale(90%)
 }
-.portfolio_setup > article>img:hover{
-  filter: grayscale(10%) blur(2px);
+.portfolio_setup > article>img:hover,
+.relateret_sites_container > article> a> img:hover{
+  filter: grayscale(10%) blur(1px);
+  background-color: #DE1B1B;
+}
+/*boks article får skiftende baggrundsfarve*/ 
+.hoverK:hover {
+  color: #FCFDFF;
+  background-color: #DE1B1B;
+}
+.hoverD:hover {
+  color: #FCFDFF;
+  background-color: #179B14;
+}
+.hoverDK:hover {
+  color: #FCFDFF;
+  background-color: #193B6E;
 }
 
 .tema {
@@ -310,8 +336,30 @@ article img {
   font-size: 2em;
   color: #179B14;
   background-color: #FCFDFF;
+  font-size: clamp(2rem, 3.2vw + 1rem, 3rem); /*flydende tekst alt efter viewport str.*/
   }
   
+/*TODO: lad knapper stå lige i portfolio*/
+/* 
+
+/*boks article får skiftende baggrundsfarve*/ 
+.hoverK:hover {
+  background-color: #DE1B1B;
+}
+.hoverD:hover {
+  color: #FCFDFF;
+  background-color: #179B14;
+}
+
+.tema {
+  font-family: Gotham-DeviantBold;
+  font-size: 2em;
+  color: #179B14;
+  background-color: #FCFDFF;
+  font-size: clamp(2rem, 3.2vw + 1rem, 3rem); /*flydende tekst alt efter viewport str.*/
+  }
+
+ 
 /*positionere så tekst ikke bliver blurry*/ 
 #teksttema2{
   position: absolute;
@@ -333,13 +381,13 @@ article img {
 }
 #teksttema5{
   position: absolute;
-  top: 60%;
+  top: 85%;
   left: 10%;
   text-align: center;
 }
 #teksttema6{
   position: absolute;
-  top: 55%;
+  top: 85%;
   left: 45%;
   text-align: center;
 }
@@ -352,9 +400,131 @@ article img {
 #tema6 {
     display:grid;
     grid-template-columns: 1fr;
+
 }
-/* 
+
+/*RELATERET PROJEKTER*/
+
 .relateret_sites
 {
+display: grid;
+grid-template-columns: 1fr ;
 
-} */
+}
+#relateret_sitesSection {
+  grid-area: 1/1;
+  grid-row: 1;
+}
+.relateret_sites_container {
+  grid-area: 2/1 ;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(500px, 1fr)) ;
+  gap: 10px;
+}
+.relateret_sites_container img {
+  inline-size: 100%;
+}
+
+
+.relateret_sites_container > article
+{
+display: grid;
+justify-self: center;
+align-self: start;
+
+}
+.relateret_sites_container > article > img
+.relateret_sites_container > article > .reftema {
+grid-area: 1/1;
+}
+.reftema {
+   text-align: center;
+  color: #179B14;
+  background-color: #FCFDFF;
+  font-size: clamp(2rem, 3.2vw + 1rem, 3rem); /*flydende tekst alt efter viewport str.*/
+}
+
+.hoverD > img {
+  justify-self: start;
+  align-self: flex-start;
+}
+
+
+/*MOBILE*/
+ @media (max-width: 500px) {
+   /*========PORTFOLIO=========*/
+    .portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+.portfolio_setup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  justify-items: center;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  
+}article img,
+ .tema {
+  grid-area: 1/1;
+}
+article img {
+  filter: grayscale(90%)
+}
+.portfolio_setup > article>img:hover,
+.relateret_sites_container > article> a> img:hover{
+  filter: grayscale(10%) blur(1px);
+  background-color: #DE1B1B;
+  }
+  .hoverK:hover {
+    background-color: #DE1B1B;
+  }
+  .hoverD:hover {
+    color: #FCFDFF;
+    background-color: #179B14;
+  }
+  
+  .tema {
+    font-family: Gotham-DeviantBold;
+    font-size: 2em;
+    color: #179B14;
+    background-color: #FCFDFF;
+    font-size: clamp(2rem, 3.2vw + 1rem, 3rem); /*flydende tekst alt efter viewport str.*/
+    }
+
+    #teksttema2{
+      position: absolute;
+      top: 30%;
+      left: 37%;
+      text-align: center;
+    }
+    #teksttema3{
+      position: absolute;
+      top: 70%;
+      left: 37%;
+      text-align: center;
+    }
+     #teksttema4{
+      position: absolute;
+      top: 103%;
+      left: 37%;
+      text-align: center;
+    }
+    #teksttema5{
+      position: absolute;
+      top: 141%;
+      left: 37%;
+      text-align: center;
+    }
+    #teksttema6{
+      position: absolute;
+      top: 165%;
+      left: 37%;
+      text-align: center;
+    } 
+}

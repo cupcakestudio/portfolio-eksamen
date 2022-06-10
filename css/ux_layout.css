@@ -1,0 +1,109 @@
+img {
+    max-width: 100%;
+    height: fit-content;
+}
+.ux_content {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;  
+
+}
+.ux_content > p{
+   display:inline-block; 
+
+}
+h2 {display: block;
+    align-self: center;
+    grid-area: 1/2;
+
+}
+.second_project {display: block;
+    align-self: center;
+    grid-row: 3;
+
+}
+.flex_content{
+      grid-column: 2;
+      grid-row: 2;
+      row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.flex_content1{
+      grid-column: 2;
+      grid-row: 4;
+      row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
+
+
+/*tema3 .relateret_sites*/
+
+  #tema3 
+  #reftema4 { 
+    position: absolute;
+    top: 244%;
+    left: 17%;
+   
+  }
+  
+  #tema3
+  #reftema5 { 
+    position: absolute;
+    top: 244%;
+    left: 75%;
+   
+  }
+
+/*tema4 .relateret_sites*/
+#tema4  
+#reftema2 { 
+    position: absolute;
+    top: 350%;
+    left: 19%;
+   
+  }
+  #tema4 
+  #reftema3 { 
+    position: absolute;
+    top: 350%;
+    left: 70%;
+  }
+  #tema4 
+  #reftema4 { 
+    position: absolute;
+    top: 427%;
+    left: 19%;
+   
+  }
+  
+  #tema4 
+  #reftema5 { 
+    position: absolute;
+    top: 450%;
+    left: 19%;
+   
+}
+
+/*tem5 relateret sites*/
+
+#tema5 
+  #reftema3 { 
+    position: absolute;
+    top: 280%;
+    left: 17%;
+   
+  }
+  
+  #tema5
+  #reftema4 { 
+    position: absolute;
+    top: 280%;
+    left: 75%;
+   
+  }
