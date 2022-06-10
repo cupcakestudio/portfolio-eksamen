@@ -44,6 +44,11 @@ img {
     left: 70%;
   }
 
+  #tema2 .links,
+  #tema6 .links {
+    grid-row:2;
+  }
+
 @media (max-width: 500px) {
 
   #tema2 .grid_code,
@@ -57,7 +62,19 @@ img {
  .grid_code > :first-child{
    grid-area: 2;
  }
-  
+ #tema2  
+ #reftema4 { 
+     position: absolute;
+     top: 271%;
+     left: 17%;
+    
+   }
+   #tema2 
+   #reftema6 { 
+     position: absolute;
+     top: 271%;
+     left: 70%;
+   }
 }
 
 

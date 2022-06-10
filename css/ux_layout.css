@@ -25,13 +25,8 @@ img {
 
 }
 
-.links {
-  margin: auto;
-    grid-row:3 ;
-}
-#tema4 .links {
-    grid-row:7 ;
-}
+
+
 h2 {display: block;
     align-self: center;
     grid-area: 1/2;

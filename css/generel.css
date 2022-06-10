@@ -16,6 +16,7 @@ body {
     background-color: #252525;
     color: #5FA0DD; 
     font-family: Gotham-Deviant;
+    font-size: normal;
 }
 footer {
 background-color: #FCFDFF;
@@ -36,13 +37,15 @@ p {
 header {
     display: flex;
     flex-direction: row;
-    
     background-color: #FCFDFF;
     color: #5FA0DD; 
     text-shadow: 2px 0px 5px#5FA0DD;
     text-decoration: none;
     
-}
+}  
+header > a{
+   margin-right: auto;  
+   }
 nav ul {
     display: flex;
     justify-self: flex-start; 
@@ -62,6 +65,23 @@ nav ul > li  {
     align-items: center;
    
 } 
+
+.hide {
+  display: none;
+}
+
+.links {
+  margin-top: 10%;
+  border-top: 2px solid #5FA0DD;
+    grid-row:3 ;
+}
+.relateret_sites {
+  margin-top: 10%;
+  border-top: 2px solid #5FA0DD;
+ 
+}
+
+
 /* SPLASH*/ 
 
 .splash
@@ -189,24 +209,7 @@ article img {
   }
   
 
- 
-/* /*boks article får skiftende baggrundsfarve
-.hoverK:hover {
-  background-color: #DE1B1B;
-}
-.hoverD:hover {
-  color: #FCFDFF;
-  background-color: #179B14;
-}
 
-.tema {
-  font-family: Gotham-DeviantBold;
-  font-size: 2em;
-  color: #179B14;
-  background-color: #FCFDFF;
-  font-size: clamp(2rem, 3.2vw + 1rem, 3rem);
-   /*flydende tekst alt efter viewport str.
-  }  */
 
  
 /*positionere så tekst ikke bliver blurry*/ 
@@ -462,11 +465,42 @@ grid-area: 1/1;
     color: #252525;
     text-shadow: 5px 2px 10px#FCFDFF;
   }
+
+
 /*soMe*/
 
 /*=============MOBILE==========*/
 
  @media (max-width: 500px) {
+
+   /*=====BURGERMENU==== fra L&F projektet med ændringer*/
+ 
+   .burgermenu img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+   }
+   .burgermenu {
+    display: contents;
+   }
+   .burgermenu > ul {
+     display: none;
+   }
+   /*viser contents hvis burgermenu er togglet til*/
+   .burgermenu.shown ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+   }
+   
+   .toggle-btn {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
    /*========PORTFOLIO=========*/
     .portfolio {
     display: grid;
