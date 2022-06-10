@@ -2,14 +2,31 @@ img {
     max-width: 100%;
     height: fit-content;
 }
+
 .ux_content {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;  
 
 }
+.codeSection {
+    grid-column: 2;
+}
+
+.codeSection > h2 {
+   grid-column: 1;
+    
+}
+.grid_code {
+    grid-row: 2;
+}
+
 .ux_content > p{
    display:inline-block; 
 
+}
+
+.links {
+    grid-row:3 ;
 }
 h2 {display: block;
     align-self: center;

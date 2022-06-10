@@ -2,13 +2,21 @@ img {
     max-width: 100%;
 }
 
-.flexbox_code
+#tema2 .grid_code
 {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
+    margin-top: 10%;
+   display:grid;
+   grid-template-columns: repeat(2, minmax(500px, 1fr));
+   row-gap: 25px;
 }
+.grid_code
+{
+   display:grid;
+   grid-template-columns: repeat(2, minmax(500px, 1fr));
+   row-gap: 25px;
+}
+
+
 
 /*tema2 .relateret_sites*/
 #tema2  
@@ -20,6 +28,19 @@ img {
   }
   #tema2 
   #reftema6 { 
+    position: absolute;
+    top: 202%;
+    left: 70%;
+  }
+#tema6  
+#reftema2 { 
+    position: absolute;
+    top: 202%;
+    left: 17%;
+   
+  }
+  #tema6 
+  #reftema4 { 
     position: absolute;
     top: 202%;
     left: 70%;
