@@ -17,6 +17,11 @@ body {
     color: #5FA0DD; 
     font-family: Gotham-Deviant;
 }
+footer {
+background-color: #FCFDFF;
+color: #5FA0DD;
+text-align: center;
+}
 
 h2{
     font-family: Gotham-DeviantBold;
@@ -91,7 +96,7 @@ grid-column: 2/2;
 }
 
 .categories figure a{
-   text-align: justify;
+   align-self: center;
    text-decoration: none;
    color: #FCFDFF;
 }
@@ -99,7 +104,6 @@ grid-column: 2/2;
 /* NAVIGATION*/
 
 .breadcrumbs ul li p{
-
     gap: 5px;
 }
 
@@ -108,10 +112,11 @@ grid-column: 2/2;
 .contact_me {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 5% 15% 5% 15%;
+    row-gap: 50px;
 }
 
 /*ABOUT*/
-
 
 .om_mig {
 grid-column: 1/1;
@@ -297,6 +302,13 @@ grid-area: 1/1;
 /*kontakt*/
 /*soMe*/
 
+.contact_container {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 10px;
+ 
+}
+
 .contact_form > h2 {
     padding-block: 2rem 1rem;
     text-align: center;
@@ -337,7 +349,7 @@ grid-area: 1/1;
   #container {
     border: solid 0.1px #474544;
     max-width: 900px;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     position: relative;
   }
   

@@ -2,19 +2,15 @@ img {
     max-width: 100%;
 }
 
-#tema2 .grid_code
+#tema2 .grid_code,
+#tema6 .grid_code
 {
     margin-top: 10%;
    display:grid;
    grid-template-columns: repeat(2, minmax(500px, 1fr));
    row-gap: 25px;
 }
-.grid_code
-{
-   display:grid;
-   grid-template-columns: repeat(2, minmax(500px, 1fr));
-   row-gap: 25px;
-}
+
 
 
 
@@ -22,27 +18,28 @@ img {
 #tema2  
 #reftema4 { 
     position: absolute;
-    top: 202%;
+    top: 271%;
     left: 17%;
    
   }
   #tema2 
   #reftema6 { 
     position: absolute;
-    top: 202%;
+    top: 271%;
     left: 70%;
   }
+  /*tema6 .relateret_sites*/
 #tema6  
 #reftema2 { 
     position: absolute;
-    top: 202%;
+    top: 68%;
     left: 17%;
    
   }
   #tema6 
   #reftema4 { 
     position: absolute;
-    top: 202%;
+    top: 68%;
     left: 70%;
   }
 
