@@ -3,6 +3,7 @@ img {
 }
 
 #tema2 .grid_code,
+#tema4 .grid_code,
 #tema6 .grid_code
 {
     margin-top: 10%;
@@ -46,6 +47,7 @@ img {
 @media (max-width: 500px) {
 
   #tema2 .grid_code,
+  #tema4 .grid_code,
   #tema6 .grid_code{
     /* display: flex;
     flex-direction: column; */

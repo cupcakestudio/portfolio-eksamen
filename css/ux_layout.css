@@ -26,7 +26,11 @@ img {
 }
 
 .links {
+  margin: auto;
     grid-row:3 ;
+}
+#tema4 .links {
+    grid-row:7 ;
 }
 h2 {display: block;
     align-self: center;
@@ -133,5 +137,15 @@ h2 {display: block;
     .ux_content {
       display: grid;
       grid-template-columns: 1fr;
+    }
+    .flex_content,
+    .flex_content1 {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .flex_content > img:nth-child(2), 
+    .flex_content1 > img:nth-child(2) {
+     order:2;
     }
   }
