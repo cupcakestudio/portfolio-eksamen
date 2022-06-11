@@ -104,9 +104,11 @@ grid-column: 2/2;
 
 .categories figure {
     background-color:#252525;
-    border: #FCFDFF 2px solid;
+    border: #FCFDFF 2px solid; 
+     padding:5%;
 }
 .categories figure:nth-child(1):hover {
+
     background-color:#DE1B1B ;
 }
 .categories figure:nth-child(2):hover {
@@ -171,18 +173,20 @@ article {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  
+  padding: 5%;
+  border-radius: 5%;
 }
-/*TODO: lad knapper stå lige i portfolio*/
+
 
  article img,
  .tema {
   grid-area: 1/1;
 }
 article img {
+  
   filter: grayscale(90%)
 }
-.portfolio_setup > article>img:hover,
+.portfolio_setup > article img:hover,
 .relateret_sites_container > article> a> img:hover{
   filter: grayscale(10%) blur(1px);
   background-color: #DE1B1B;
@@ -209,10 +213,10 @@ article img {
   font-size: clamp(2rem, 3.2vw + 1rem, 3rem); /*flydende tekst alt efter viewport str.*/
   }
   
-
-
-
- 
+/* lad knapper stå lige i portfolio*/
+article :last-child {
+  margin-top: auto;
+}
 /*positionere så tekst ikke bliver blurry*/ 
 #teksttema2{
   position: absolute;
