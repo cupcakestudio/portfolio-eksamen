@@ -41,10 +41,11 @@ header {
     color: #5FA0DD; 
     text-shadow: 2px 0px 5px#5FA0DD;
     text-decoration: none;
+   
     
 }  
 header > a{
-   margin-right: auto;  
+   margin-right: auto;   
    }
 nav ul {
     display: flex;
@@ -56,7 +57,7 @@ nav ul > li > a {
     color: #5FA0DD; 
     text-shadow: 0px 0px 10px#5FA0DD;
     text-decoration: none;
-   
+  
 }
    
 nav ul > li  {
@@ -136,7 +137,7 @@ grid-column: 2/2;
     display: grid;
     grid-template-columns: 1fr;
     padding: 5% 15% 5% 15%;
-    row-gap: 50px;
+    row-gap: 2px;
 }
 
 /*ABOUT*/
@@ -472,7 +473,21 @@ grid-area: 1/1;
   }
 
 
-/*soMe*/
+/*=======soMe========*/
+
+.soMe_flexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.soMe_flexbox > a {
+  text-decoration: none;
+  color: #5FA0DD;
+  text-shadow: 0px 0px 2px #179B14;
+}
+.soMe_flexbox > img {
+ width: 50px;
+}
 
 /*=============MOBILE==========*/
 
@@ -497,13 +512,14 @@ grid-area: 1/1;
     flex-flow: column;
     justify-content: center;
     margin: auto;
+    
    }
    
    .toggle-btn {
     display: block;
     border: none;
     background: none;
-    cursor: pointer;
+    cursor: pointer;transition: 1s;
   }
 
    /*========PORTFOLIO=========*/
@@ -589,5 +605,21 @@ article img {
       display: grid;
       grid-template-columns: 1fr;
       gap: 10px;
+    }
+
+    /*==========ABOUT=========*/
+    .floated {
+      float: right;
+      margin-bottom: 1rem;
+    }
+    
+    /* =========KONTAKT=========*/
+    .contact_container {
+      display: grid;
+      grid-template-columns: 1fr ;
+    }
+    .soMe_flexbox {
+      display: flex;
+      flex-direction: column ;
     }
 }

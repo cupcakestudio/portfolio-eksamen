@@ -6,10 +6,11 @@ img {
 #tema4 .grid_code,
 #tema6 .grid_code
 {
-    margin-top: 10%;
+   margin-top: 10%;
    display:grid;
    grid-template-columns: repeat(2, minmax(500px, 1fr));
    row-gap: 25px;
+   padding: 5%;
 }
 
 
@@ -59,7 +60,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
  }
- .grid_code > :first-child{
+ .grid_code:first-child{
    grid-area: 2;
  }
  #tema2  
