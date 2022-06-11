@@ -39,7 +39,7 @@ header {
     flex-direction: row;
     background-color: #FCFDFF;
     color: #5FA0DD; 
-    text-shadow: 2px 0px 5px#5FA0DD;
+    text-shadow: 2px 0px 5px #179B14;
     text-decoration: none;
    
     
@@ -55,9 +55,9 @@ nav ul {
 }
 nav ul > li > a {
     color: #5FA0DD; 
-    text-shadow: 0px 0px 10px#5FA0DD;
+    text-shadow: 0px 0px 5px #179b14;
     text-decoration: none;
-  
+
 }
    
 nav ul > li  {
@@ -76,6 +76,12 @@ nav ul > li  {
   margin-top: 10%;
   border-top: 2px solid #5FA0DD;
     grid-row:3 ;
+    
+}
+.links a {
+  color: #5FA0DD;
+  text-decoration: underline;
+
 }
 .relateret_sites {
   margin-top: 10%;
@@ -83,7 +89,20 @@ nav ul > li  {
  
 }
 
+/*==========BUTTONS===============*/
 
+button {
+  background-color: transparent;
+  border: none;
+  
+} 
+button:hover {
+  background-color: #5FA0DD;
+  color:#ADADAD;
+  opacity: 1;
+  transition: opacity 2s 0s;
+ cursor: pointer;
+} 
 /* SPLASH*/ 
 
 .splash
