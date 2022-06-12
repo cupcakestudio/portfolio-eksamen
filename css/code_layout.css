@@ -16,7 +16,7 @@ img {
  
    display:grid;
    grid-template-columns: repeat(2, minmax(500px, 1fr));
-   row-gap: 25px;
+   gap: 25px;
   
 }
 

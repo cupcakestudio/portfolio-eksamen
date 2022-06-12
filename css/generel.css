@@ -106,15 +106,7 @@ button:hover {
  cursor: pointer;
 } 
 /* SPLASH*/ 
-/* 
-.splashMain {
- width: 100%;
-  height:auto;
-  background-image: url(../img/splash-test2.PNG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  place-self: center;
-} */
+
 .splash
 {
  display: block;
