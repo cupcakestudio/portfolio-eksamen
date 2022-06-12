@@ -33,7 +33,7 @@ function toggleMenu() {
   if (burgermenuShown) {
     console.log(burgermenuShown); // se i konsollen
     // sæt btn.textContent til "Luk", hvis menuShown er "true"
-    btn_img.src = "img/svg/close_menu.svg";
+    btn_img.src = "img/burgerclose.webp";
   } else {
     console.log(burgermenuShown); // se i konsollen
     // sæt btn.textContent til "Menu", hvis menuShown er "false"

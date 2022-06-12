@@ -19,7 +19,7 @@ body {
     font-size: normal;
 }
 footer {
-background-color: #FCFDFF;
+
 color: #5FA0DD;
 text-align: center;
 }
@@ -37,7 +37,7 @@ p {
 header {
     display: flex;
     flex-direction: row;
-    background-color: #FCFDFF;
+ 
     color: #5FA0DD; 
     text-shadow: 2px 0px 5px #179B14;
     text-decoration: none;
@@ -520,7 +520,7 @@ grid-area: 1/1;
    /*=====BURGERMENU==== fra L&F projektet med ændringer*/
  
    .burgermenu img {
-    width: 50px;
+    width: 70px;
     height: auto;
     cursor: pointer;
    }
