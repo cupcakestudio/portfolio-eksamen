@@ -73,7 +73,7 @@ nav ul > li  {
 }
 
 .links {
-  margin-top: 10%;
+  margin-top: 5%;
   border-top: 2px solid #5FA0DD;
     grid-row:3 ;
     
@@ -212,7 +212,11 @@ article {
   border-radius: 5%;
 }
 
+/*===VIDEO===*/
 
+video {
+  inline-size: 100%;
+}
  article img,
  .tema {
   grid-area: 1/1;
