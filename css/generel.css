@@ -94,11 +94,13 @@ nav ul > li  {
 button {
   background-color: transparent;
   border: none;
+  padding:7px;
   text-shadow: 1px 1px 2px #DE1B1B, 0 0 1em #179B14, 0 0 0.2em #179B14;
 } 
 button:hover {
-  background-color: #adadad;
-  border-radius: 50%;
+  background-color: #5FA0DD;
+  border-radius: 47%;
+  padding:7px;
   color:#ADADAD;
   text-shadow: 1px 1px 2px #DE1B1B, 0 0 1em #DE1B1B, 0 0 0.2em #193B6E;
   opacity: 1;
@@ -550,7 +552,26 @@ grid-area: 1/1;
     cursor: pointer;
     transition: 1s;
   }
+  /*=======animation on burgermenu=======*/
 
+  .burgermenu img {
+    animation-name: pulse_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  @keyframes pulse_kf
+  {
+    0% {transform: scale(1);}
+    50% {
+      transform: scale(1.2);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
    /*========PORTFOLIO=========*/
     .portfolio {
     display: grid;
