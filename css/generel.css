@@ -52,6 +52,7 @@ nav ul {
     justify-self: flex-start;
     align-self: center; 
    gap: 40px;
+  
 }
 nav ul > li > a {
     color: #5FA0DD; 
@@ -67,6 +68,9 @@ nav ul > li  {
     align-items: center;
    
 } 
+.barmenu {
+  margin-top: 40px;
+}
 
 .hide {
   display: none;
