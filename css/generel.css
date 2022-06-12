@@ -111,6 +111,11 @@ button:hover {
   transition: opacity 2s 0s;
  cursor: pointer;
 } 
+
+#tilforsiden {
+  margin-top: 10px;
+  border: 2px solid #5FA0DD;
+}
 /* SPLASH*/ 
 
 .splash
@@ -127,6 +132,12 @@ button:hover {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  
+}
+
+/*====TAK====*/
+#takMain {
+  place-items: center;
 }
 /*forside layout*/ 
 
@@ -140,26 +151,30 @@ grid-area: 1/1;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.categories figure {
-   
+.categories button {
+    text-shadow: none;
     background-color:#252525;
     border: #FCFDFF 2px solid; 
-    padding:5%;
+    padding: 2%;
 }
-.categories figure:nth-child(1):hover {
+
+
+.categories button:nth-child(1):hover {
 
     background-color:#DE1B1B ;
 }
-.categories figure:nth-child(2):hover {
+.categories button:nth-child(2):hover {
     background-color:#5FA0DD ;
 }
-.categories figure:nth-child(3):hover {
+.categories button:nth-child(3):hover {
     background-color:#179B14 ;
 }
 
-.categories figure a{
+.categories button a{
    align-self: center;
    text-decoration: none;
    color: #FCFDFF;
@@ -179,6 +194,8 @@ grid-area: 1/1;
     padding: 5% 15% 5% 15%;
     row-gap: 2px;
 }
+/*====TAK=====*/
+
 
 /*ABOUT*/
 
