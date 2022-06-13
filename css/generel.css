@@ -17,11 +17,16 @@ body {
     color: #5FA0DD; 
     font-family: Gotham-Deviant;
     font-size: normal;
+    
 }
 footer {
 margin-top: 10px;
 color: #5FA0DD;
 text-align: center;
+}
+
+audio {
+  margin-top: 15px;
 }
 
 h2{
@@ -235,7 +240,7 @@ article {
   padding: 5%;
   border-radius: 5%;
 }
-button {
+.portfolio_setup button {
   animation-name: pulse_kf;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -266,10 +271,11 @@ article img {
   
   filter: grayscale(90%)
 }
-.portfolio_setup > article img:hover,
+
+.portfolio_setup > article:hover,.portfolio_setup > article > img:hover, 
 .relateret_sites_container > article> a> img:hover{
-  filter: grayscale(10%) blur(1px);
-  background-color: #DE1B1B;
+  filter: grayscale(10%);
+
 }
 /*boks article får skiftende baggrundsfarve*/ 
 .hoverK:hover {
@@ -334,7 +340,7 @@ grid-template-columns: 1fr ;
   grid-row: 1;
 }
 .relateret_sites_container {
-  grid-area: 2/1 ;
+  grid-area: 3/1 ;
   display: grid;
   grid-template-columns: repeat(2, minmax(500px, 1fr)) ;
   gap: 10px;
@@ -349,14 +355,19 @@ grid-template-columns: 1fr ;
 display: grid;
 justify-self: center;
 align-self: start;
+}
 
+.relateret_sites > h3 {
+  grid-area: 2/1;
+  grid-row: 2;
 }
 .relateret_sites_container > article > img
 .relateret_sites_container > article > .reftema {
 grid-area: 1/1;
 }
 .reftema {
-   text-align: center;
+  font-family: Gotham-DeviantBold;
+  text-align: center;
   color: #179B14;
   background-color: #FCFDFF;
   font-size: clamp(2rem, 3.2vw + 1rem, 3rem); /*flydende tekst alt efter viewport str.*/
@@ -644,17 +655,21 @@ article img,
 article img {
   filter: grayscale(90%)
 }
-.portfolio_setup > article>img:hover,
-.relateret_sites_container > article> a> img:hover{
-  filter: grayscale(10%) blur(1px);
-  background-color: #DE1B1B;
+.portfolio_setup > article>img,
+.relateret_sites_container > article> a> img{
+  filter:none;
+
   }
-  .hoverK:hover {
+  .hoverK {
     background-color: #DE1B1B;
   }
-  .hoverD:hover {
+  .hoverD {
     color: #FCFDFF;
     background-color: #179B14;
+  }
+  .hoverDK {
+    color: #FCFDFF;
+    background-color: #193B6E;
   }
   
   .tema {
@@ -669,7 +684,7 @@ article img {
     /*=======RELATERET SITES=====*/
 
     .relateret_sites_container {
-      grid-area: 2/1 ;
+      grid-area: 3/1 ;
       display: grid;
       grid-template-columns: 1fr;
       gap: 10px;
