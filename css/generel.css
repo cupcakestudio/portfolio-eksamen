@@ -33,6 +33,7 @@ img {
 }
 p {
     max-width: 62ch;
+    font-size: 1.5em;
 }
 header {
     display: flex;
