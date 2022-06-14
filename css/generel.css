@@ -317,6 +317,7 @@ article :last-child {
 #teksttema2,
 #teksttema3, #teksttema4, #teksttema5, #teksttema6 {
   z-index: 1;
+  line-height: normal;
 }
 
 /*ENKELTE TEMAER*/
