@@ -74,4 +74,8 @@ h2 {display: block;
     .flex_content1 > img:nth-child(2) {
      order:2;
     }
+
+    #tema4 > h2 {
+      margin-top: 10px;
+    }
   }
