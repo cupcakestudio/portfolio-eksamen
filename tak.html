@@ -7,10 +7,27 @@
     <title>Tak</title>
     <link rel="stylesheet" href="css/generel.css">
 </head>
-<body>
-    <header>
-           <a href="index.html"><img src="img/logo.webp" alt="Logo"></a>
-        <nav class="barmenu">
+    <body>
+        <header>
+            <a href="index.html"><img src="img/logo.webp" alt="Logo"></a>
+            <nav class="barmenu">
+                <ul>
+                    <li>
+                        <a href="about.html">Om mig</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Nav til mobil -->
+            <nav class="burgermenu">
+            <button class="toggle-btn">
+                <img class="menu-btn" src="img/burgermenu.webp" alt="burgermenu">
+            </button>
             <ul>
                 <li>
                     <a href="about.html">Om mig</a>
@@ -23,42 +40,26 @@
                 </li>
             </ul>
         </nav>
-        <!-- Nav til mobil -->
-        <nav class="burgermenu">
-          <button class="toggle-btn">
-              <img class="menu-btn" src="img/burgermenu.webp" alt="burgermenu">
-          </button>
-          <ul>
-              <li>
-                  <a href="about.html">Om mig</a>
-              </li>
-              <li>
-                  <a href="portfolio.html"> Portfolio </a>
-              </li>
-              <li>
-                  <a href="contact.html">Kontakt </a>
-              </li>
-          </ul>
-      </nav>
-    </header> 
-    <nav class="breadcrumbs">
-           <ul><li>
-                  <a href="index.html">Forside </a>
-               </li>
-               <p> > </p>
-               <li>
-                <a href="contact.html">Kontakt</a>
+        </header> 
+        <nav class="breadcrumbs">
+            <ul><li>
+                    <a href="index.html">Forside </a>
                 </li>
-            </ul>
-        </nav>  
+                    <li> > </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>  
         <main id="takMain">
-        <h1> Tak for din henvendelse!</h1>
-        <p> Jeg vil besvare den hurtigst muligt</p>  
-        <p> Hav en god dag :)</p>  
+            <h1> Tak for din henvendelse!</h1>
+            <p> Jeg vil besvare den hurtigst muligt</p>  
+            <p> Hav en god dag :)</p>  
 
-        <button id="tilforsiden" onclick="window.location.href='index.html';"> Til Forsiden </button> 
+            <button id="tilforsiden" onclick="window.location.href='index.html';"> Til Forsiden </button> 
         </main>
-        </body>
-        <footer> 2022 Ⓒ Ting Hua Lin  All rights reserved</footer>
-        <script src="js/script.js"></script>
-        </html>
+    
+<footer> 2022 Ⓒ Ting Hua Lin  All rights reserved</footer>
+<script src="js/script.js"></script>
+ </body>   
+</html>

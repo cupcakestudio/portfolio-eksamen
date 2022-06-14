@@ -16,9 +16,7 @@ body {
     background-color: #252525;
     color: #5FA0DD; 
     font-family: Gotham-Deviant;
-    font-size: normal;
     line-height: 25px;
-    font-kerning: 1px;
     
 }
 footer {
@@ -34,7 +32,7 @@ audio {
 
 h2{
     font-family: Gotham-DeviantBold;
-    font-size: 600;
+    font-size: 25px;
 }
 
 
@@ -596,7 +594,6 @@ grid-area: 1/1;
    .burgermenu.shown ul {
     display: flex;
     flex-flow: column;
-    flex-flow: 1 1 100%;
     justify-content: center;
     margin: auto;
    }
