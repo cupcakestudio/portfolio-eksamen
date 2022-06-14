@@ -606,7 +606,7 @@ grid-area: 1/1;
     cursor: pointer;
     transition: 1s;
   }
-  button {
+  .relateret_sites > button {
   animation-name: pulse_kf;
   animation-duration: 2s;
   animation-iteration-count: infinite;
